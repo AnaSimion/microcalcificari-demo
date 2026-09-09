@@ -1,0 +1,1918 @@
+{
+  "detector": "RetinaNet (EfficientNet-B5, Mammo-CLIP)",
+  "classifier_note": "MedCLIP",
+  "models": [
+    {
+      "key": "context_256_dicebce",
+      "name": "DualEncoder U-Net (ID 1)"
+    },
+    {
+      "key": "unet_resnet50_256",
+      "name": "U-Net ResNet-50 / ImageNet (ID 2)"
+    },
+    {
+      "key": "effunet_imagenet_b5_256",
+      "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)"
+    },
+    {
+      "key": "mammoclip_attention_b5",
+      "name": "Mammo-CLIP Attention U-Net (ID 6)"
+    },
+    {
+      "key": "mammoclip_segformer_b5",
+      "name": "Mammo-CLIP SegFormer-MLP (ID 7)"
+    }
+  ],
+  "images": [
+    {
+      "id": "50993787",
+      "raw": "data/50993787/raw.png",
+      "mean_dice": 0.9738,
+      "n_lesions": 117,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9553,
+          "n_segmented": 116,
+          "n_rescued": 1,
+          "n_lesions": 117,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50993787/context_256_dicebce_overlay.png",
+          "zoom": "data/50993787/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9817,
+          "n_segmented": 112,
+          "n_rescued": 4,
+          "n_lesions": 117,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50993787/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993787/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9782,
+          "n_segmented": 102,
+          "n_rescued": 11,
+          "n_lesions": 117,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50993787/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993787/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9796,
+          "n_segmented": 104,
+          "n_rescued": 10,
+          "n_lesions": 117,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50993787/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993787/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9742,
+          "n_segmented": 105,
+          "n_rescued": 11,
+          "n_lesions": 117,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50993787/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993787/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993841",
+      "raw": "data/50993841/raw.png",
+      "mean_dice": 0.9716,
+      "n_lesions": 144,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9502,
+          "n_segmented": 126,
+          "n_rescued": 12,
+          "n_lesions": 144,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993841/context_256_dicebce_overlay.png",
+          "zoom": "data/50993841/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9799,
+          "n_segmented": 131,
+          "n_rescued": 8,
+          "n_lesions": 144,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993841/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993841/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9783,
+          "n_segmented": 116,
+          "n_rescued": 20,
+          "n_lesions": 144,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993841/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993841/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9774,
+          "n_segmented": 117,
+          "n_rescued": 19,
+          "n_lesions": 144,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993841/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993841/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.972,
+          "n_segmented": 116,
+          "n_rescued": 20,
+          "n_lesions": 144,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993841/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993841/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22670809",
+      "raw": "data/22670809/raw.png",
+      "mean_dice": 0.9671,
+      "n_lesions": 6,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9537,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 3,
+          "fp_suppressed": 3,
+          "overlay": "data/22670809/context_256_dicebce_overlay.png",
+          "zoom": "data/22670809/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9752,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/22670809/unet_resnet50_256_overlay.png",
+          "zoom": "data/22670809/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9717,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22670809/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22670809/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9701,
+          "n_segmented": 5,
+          "n_rescued": 1,
+          "n_lesions": 6,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22670809/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22670809/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9647,
+          "n_segmented": 4,
+          "n_rescued": 2,
+          "n_lesions": 6,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22670809/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22670809/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993949",
+      "raw": "data/50993949/raw.png",
+      "mean_dice": 0.9667,
+      "n_lesions": 133,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9463,
+          "n_segmented": 119,
+          "n_rescued": 9,
+          "n_lesions": 133,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993949/context_256_dicebce_overlay.png",
+          "zoom": "data/50993949/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9782,
+          "n_segmented": 122,
+          "n_rescued": 9,
+          "n_lesions": 133,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993949/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993949/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9712,
+          "n_segmented": 110,
+          "n_rescued": 16,
+          "n_lesions": 133,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993949/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993949/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9726,
+          "n_segmented": 110,
+          "n_rescued": 16,
+          "n_lesions": 133,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993949/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993949/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9651,
+          "n_segmented": 108,
+          "n_rescued": 17,
+          "n_lesions": 133,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993949/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993949/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993895",
+      "raw": "data/50993895/raw.png",
+      "mean_dice": 0.9655,
+      "n_lesions": 105,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9433,
+          "n_segmented": 99,
+          "n_rescued": 5,
+          "n_lesions": 105,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993895/context_256_dicebce_overlay.png",
+          "zoom": "data/50993895/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9812,
+          "n_segmented": 98,
+          "n_rescued": 6,
+          "n_lesions": 105,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993895/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993895/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9691,
+          "n_segmented": 89,
+          "n_rescued": 14,
+          "n_lesions": 105,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993895/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993895/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9745,
+          "n_segmented": 92,
+          "n_rescued": 11,
+          "n_lesions": 105,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993895/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993895/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9591,
+          "n_segmented": 86,
+          "n_rescued": 17,
+          "n_lesions": 105,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993895/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993895/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22678449",
+      "raw": "data/22678449/raw.png",
+      "mean_dice": 0.9553,
+      "n_lesions": 31,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9527,
+          "n_segmented": 30,
+          "n_rescued": 1,
+          "n_lesions": 31,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678449/context_256_dicebce_overlay.png",
+          "zoom": "data/22678449/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9595,
+          "n_segmented": 30,
+          "n_rescued": 1,
+          "n_lesions": 31,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678449/unet_resnet50_256_overlay.png",
+          "zoom": "data/22678449/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.957,
+          "n_segmented": 30,
+          "n_rescued": 1,
+          "n_lesions": 31,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678449/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22678449/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.957,
+          "n_segmented": 30,
+          "n_rescued": 1,
+          "n_lesions": 31,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678449/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22678449/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9502,
+          "n_segmented": 30,
+          "n_rescued": 1,
+          "n_lesions": 31,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678449/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22678449/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22670855",
+      "raw": "data/22670855/raw.png",
+      "mean_dice": 0.9541,
+      "n_lesions": 2,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9334,
+          "n_segmented": 2,
+          "n_rescued": 0,
+          "n_lesions": 2,
+          "fp_patches": 11,
+          "fp_suppressed": 8,
+          "overlay": "data/22670855/context_256_dicebce_overlay.png",
+          "zoom": "data/22670855/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9565,
+          "n_segmented": 2,
+          "n_rescued": 0,
+          "n_lesions": 2,
+          "fp_patches": 6,
+          "fp_suppressed": 4,
+          "overlay": "data/22670855/unet_resnet50_256_overlay.png",
+          "zoom": "data/22670855/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9512,
+          "n_segmented": 2,
+          "n_rescued": 0,
+          "n_lesions": 2,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/22670855/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22670855/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9665,
+          "n_segmented": 2,
+          "n_rescued": 0,
+          "n_lesions": 2,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/22670855/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22670855/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9632,
+          "n_segmented": 2,
+          "n_rescued": 0,
+          "n_lesions": 2,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22670855/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22670855/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993814",
+      "raw": "data/50993814/raw.png",
+      "mean_dice": 0.9514,
+      "n_lesions": 85,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9281,
+          "n_segmented": 84,
+          "n_rescued": 1,
+          "n_lesions": 85,
+          "fp_patches": 12,
+          "fp_suppressed": 11,
+          "overlay": "data/50993814/context_256_dicebce_overlay.png",
+          "zoom": "data/50993814/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9605,
+          "n_segmented": 84,
+          "n_rescued": 1,
+          "n_lesions": 85,
+          "fp_patches": 7,
+          "fp_suppressed": 6,
+          "overlay": "data/50993814/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993814/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9563,
+          "n_segmented": 83,
+          "n_rescued": 2,
+          "n_lesions": 85,
+          "fp_patches": 9,
+          "fp_suppressed": 9,
+          "overlay": "data/50993814/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993814/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9598,
+          "n_segmented": 85,
+          "n_rescued": 0,
+          "n_lesions": 85,
+          "fp_patches": 4,
+          "fp_suppressed": 4,
+          "overlay": "data/50993814/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993814/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9522,
+          "n_segmented": 83,
+          "n_rescued": 2,
+          "n_lesions": 85,
+          "fp_patches": 5,
+          "fp_suppressed": 5,
+          "overlay": "data/50993814/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993814/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50998494",
+      "raw": "data/50998494/raw.png",
+      "mean_dice": 0.9494,
+      "n_lesions": 12,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.939,
+          "n_segmented": 11,
+          "n_rescued": 1,
+          "n_lesions": 12,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50998494/context_256_dicebce_overlay.png",
+          "zoom": "data/50998494/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9539,
+          "n_segmented": 11,
+          "n_rescued": 1,
+          "n_lesions": 12,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998494/unet_resnet50_256_overlay.png",
+          "zoom": "data/50998494/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9453,
+          "n_segmented": 11,
+          "n_rescued": 1,
+          "n_lesions": 12,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998494/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50998494/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9536,
+          "n_segmented": 11,
+          "n_rescued": 1,
+          "n_lesions": 12,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998494/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50998494/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9553,
+          "n_segmented": 11,
+          "n_rescued": 1,
+          "n_lesions": 12,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998494/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50998494/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50998467",
+      "raw": "data/50998467/raw.png",
+      "mean_dice": 0.9458,
+      "n_lesions": 3,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9254,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50998467/context_256_dicebce_overlay.png",
+          "zoom": "data/50998467/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9452,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998467/unet_resnet50_256_overlay.png",
+          "zoom": "data/50998467/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9543,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998467/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50998467/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9484,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998467/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50998467/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9559,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998467/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50998467/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22678495",
+      "raw": "data/22678495/raw.png",
+      "mean_dice": 0.9428,
+      "n_lesions": 32,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9367,
+          "n_segmented": 32,
+          "n_rescued": 0,
+          "n_lesions": 32,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22678495/context_256_dicebce_overlay.png",
+          "zoom": "data/22678495/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9441,
+          "n_segmented": 31,
+          "n_rescued": 1,
+          "n_lesions": 32,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678495/unet_resnet50_256_overlay.png",
+          "zoom": "data/22678495/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9475,
+          "n_segmented": 31,
+          "n_rescued": 1,
+          "n_lesions": 32,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678495/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22678495/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.942,
+          "n_segmented": 31,
+          "n_rescued": 1,
+          "n_lesions": 32,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678495/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22678495/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9434,
+          "n_segmented": 32,
+          "n_rescued": 0,
+          "n_lesions": 32,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678495/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22678495/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993976",
+      "raw": "data/50993976/raw.png",
+      "mean_dice": 0.9427,
+      "n_lesions": 79,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9156,
+          "n_segmented": 76,
+          "n_rescued": 1,
+          "n_lesions": 79,
+          "fp_patches": 8,
+          "fp_suppressed": 7,
+          "overlay": "data/50993976/context_256_dicebce_overlay.png",
+          "zoom": "data/50993976/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9507,
+          "n_segmented": 77,
+          "n_rescued": 1,
+          "n_lesions": 79,
+          "fp_patches": 8,
+          "fp_suppressed": 7,
+          "overlay": "data/50993976/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993976/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9496,
+          "n_segmented": 76,
+          "n_rescued": 1,
+          "n_lesions": 79,
+          "fp_patches": 4,
+          "fp_suppressed": 4,
+          "overlay": "data/50993976/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993976/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9516,
+          "n_segmented": 76,
+          "n_rescued": 0,
+          "n_lesions": 79,
+          "fp_patches": 3,
+          "fp_suppressed": 3,
+          "overlay": "data/50993976/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993976/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9459,
+          "n_segmented": 74,
+          "n_rescued": 2,
+          "n_lesions": 79,
+          "fp_patches": 3,
+          "fp_suppressed": 3,
+          "overlay": "data/50993976/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993976/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50998413",
+      "raw": "data/50998413/raw.png",
+      "mean_dice": 0.9371,
+      "n_lesions": 6,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9274,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 5,
+          "fp_suppressed": 5,
+          "overlay": "data/50998413/context_256_dicebce_overlay.png",
+          "zoom": "data/50998413/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9438,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50998413/unet_resnet50_256_overlay.png",
+          "zoom": "data/50998413/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9464,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50998413/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50998413/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9302,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 3,
+          "fp_suppressed": 3,
+          "overlay": "data/50998413/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50998413/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9378,
+          "n_segmented": 6,
+          "n_rescued": 0,
+          "n_lesions": 6,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50998413/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50998413/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993868",
+      "raw": "data/50993868/raw.png",
+      "mean_dice": 0.9363,
+      "n_lesions": 96,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9179,
+          "n_segmented": 93,
+          "n_rescued": 1,
+          "n_lesions": 96,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/50993868/context_256_dicebce_overlay.png",
+          "zoom": "data/50993868/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9481,
+          "n_segmented": 89,
+          "n_rescued": 3,
+          "n_lesions": 96,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993868/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993868/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9397,
+          "n_segmented": 90,
+          "n_rescued": 2,
+          "n_lesions": 96,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50993868/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993868/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9413,
+          "n_segmented": 89,
+          "n_rescued": 2,
+          "n_lesions": 96,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993868/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993868/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9345,
+          "n_segmented": 83,
+          "n_rescued": 5,
+          "n_lesions": 96,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50993868/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993868/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "24055382",
+      "raw": "data/24055382/raw.png",
+      "mean_dice": 0.9314,
+      "n_lesions": 67,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9191,
+          "n_segmented": 65,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/24055382/context_256_dicebce_overlay.png",
+          "zoom": "data/24055382/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9356,
+          "n_segmented": 65,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/24055382/unet_resnet50_256_overlay.png",
+          "zoom": "data/24055382/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9351,
+          "n_segmented": 66,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/24055382/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/24055382/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9348,
+          "n_segmented": 66,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/24055382/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/24055382/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9324,
+          "n_segmented": 66,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/24055382/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/24055382/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22678518",
+      "raw": "data/22678518/raw.png",
+      "mean_dice": 0.9313,
+      "n_lesions": 15,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9314,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 3,
+          "fp_suppressed": 3,
+          "overlay": "data/22678518/context_256_dicebce_overlay.png",
+          "zoom": "data/22678518/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.93,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 4,
+          "fp_suppressed": 4,
+          "overlay": "data/22678518/unet_resnet50_256_overlay.png",
+          "zoom": "data/22678518/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9349,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22678518/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22678518/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9277,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22678518/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22678518/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9326,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22678518/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22678518/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "24055328",
+      "raw": "data/24055328/raw.png",
+      "mean_dice": 0.9309,
+      "n_lesions": 67,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9083,
+          "n_segmented": 66,
+          "n_rescued": 1,
+          "n_lesions": 67,
+          "fp_patches": 7,
+          "fp_suppressed": 6,
+          "overlay": "data/24055328/context_256_dicebce_overlay.png",
+          "zoom": "data/24055328/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9399,
+          "n_segmented": 67,
+          "n_rescued": 0,
+          "n_lesions": 67,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/24055328/unet_resnet50_256_overlay.png",
+          "zoom": "data/24055328/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.938,
+          "n_segmented": 67,
+          "n_rescued": 0,
+          "n_lesions": 67,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/24055328/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/24055328/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9366,
+          "n_segmented": 67,
+          "n_rescued": 0,
+          "n_lesions": 67,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/24055328/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/24055328/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9319,
+          "n_segmented": 67,
+          "n_rescued": 0,
+          "n_lesions": 67,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/24055328/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/24055328/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50993922",
+      "raw": "data/50993922/raw.png",
+      "mean_dice": 0.9272,
+      "n_lesions": 90,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8978,
+          "n_segmented": 86,
+          "n_rescued": 1,
+          "n_lesions": 90,
+          "fp_patches": 6,
+          "fp_suppressed": 6,
+          "overlay": "data/50993922/context_256_dicebce_overlay.png",
+          "zoom": "data/50993922/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9445,
+          "n_segmented": 86,
+          "n_rescued": 1,
+          "n_lesions": 90,
+          "fp_patches": 8,
+          "fp_suppressed": 8,
+          "overlay": "data/50993922/unet_resnet50_256_overlay.png",
+          "zoom": "data/50993922/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.933,
+          "n_segmented": 83,
+          "n_rescued": 1,
+          "n_lesions": 90,
+          "fp_patches": 7,
+          "fp_suppressed": 7,
+          "overlay": "data/50993922/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50993922/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9328,
+          "n_segmented": 80,
+          "n_rescued": 3,
+          "n_lesions": 90,
+          "fp_patches": 5,
+          "fp_suppressed": 5,
+          "overlay": "data/50993922/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50993922/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9278,
+          "n_segmented": 77,
+          "n_rescued": 3,
+          "n_lesions": 90,
+          "fp_patches": 6,
+          "fp_suppressed": 6,
+          "overlay": "data/50993922/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50993922/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22678472",
+      "raw": "data/22678472/raw.png",
+      "mean_dice": 0.9198,
+      "n_lesions": 15,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9145,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678472/context_256_dicebce_overlay.png",
+          "zoom": "data/22678472/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9256,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/22678472/unet_resnet50_256_overlay.png",
+          "zoom": "data/22678472/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9194,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678472/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22678472/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9198,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678472/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22678472/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9197,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/22678472/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22678472/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "53582710",
+      "raw": "data/53582710/raw.png",
+      "mean_dice": 0.9179,
+      "n_lesions": 18,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9001,
+          "n_segmented": 17,
+          "n_rescued": 1,
+          "n_lesions": 18,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/53582710/context_256_dicebce_overlay.png",
+          "zoom": "data/53582710/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9297,
+          "n_segmented": 16,
+          "n_rescued": 1,
+          "n_lesions": 18,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/53582710/unet_resnet50_256_overlay.png",
+          "zoom": "data/53582710/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9195,
+          "n_segmented": 16,
+          "n_rescued": 1,
+          "n_lesions": 18,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/53582710/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/53582710/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9219,
+          "n_segmented": 16,
+          "n_rescued": 1,
+          "n_lesions": 18,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/53582710/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/53582710/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9181,
+          "n_segmented": 16,
+          "n_rescued": 1,
+          "n_lesions": 18,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/53582710/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/53582710/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "53582764",
+      "raw": "data/53582764/raw.png",
+      "mean_dice": 0.917,
+      "n_lesions": 17,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8798,
+          "n_segmented": 17,
+          "n_rescued": 0,
+          "n_lesions": 17,
+          "fp_patches": 4,
+          "fp_suppressed": 3,
+          "overlay": "data/53582764/context_256_dicebce_overlay.png",
+          "zoom": "data/53582764/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9323,
+          "n_segmented": 17,
+          "n_rescued": 0,
+          "n_lesions": 17,
+          "fp_patches": 1,
+          "fp_suppressed": 0,
+          "overlay": "data/53582764/unet_resnet50_256_overlay.png",
+          "zoom": "data/53582764/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9301,
+          "n_segmented": 17,
+          "n_rescued": 0,
+          "n_lesions": 17,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/53582764/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/53582764/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9238,
+          "n_segmented": 17,
+          "n_rescued": 0,
+          "n_lesions": 17,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/53582764/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/53582764/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9192,
+          "n_segmented": 17,
+          "n_rescued": 0,
+          "n_lesions": 17,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/53582764/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/53582764/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "26933830",
+      "raw": "data/26933830/raw.png",
+      "mean_dice": 0.9168,
+      "n_lesions": 3,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9021,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/26933830/context_256_dicebce_overlay.png",
+          "zoom": "data/26933830/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9167,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/26933830/unet_resnet50_256_overlay.png",
+          "zoom": "data/26933830/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9246,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/26933830/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/26933830/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9272,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/26933830/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/26933830/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9133,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/26933830/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/26933830/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "51070197",
+      "raw": "data/51070197/raw.png",
+      "mean_dice": 0.9166,
+      "n_lesions": 16,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.9107,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 16,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/51070197/context_256_dicebce_overlay.png",
+          "zoom": "data/51070197/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9213,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 16,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/51070197/unet_resnet50_256_overlay.png",
+          "zoom": "data/51070197/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9134,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 16,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/51070197/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/51070197/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9168,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 16,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/51070197/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/51070197/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9207,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 16,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/51070197/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/51070197/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22580068",
+      "raw": "data/22580068/raw.png",
+      "mean_dice": 0.9165,
+      "n_lesions": 18,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8507,
+          "n_segmented": 18,
+          "n_rescued": 0,
+          "n_lesions": 18,
+          "fp_patches": 9,
+          "fp_suppressed": 8,
+          "overlay": "data/22580068/context_256_dicebce_overlay.png",
+          "zoom": "data/22580068/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9338,
+          "n_segmented": 18,
+          "n_rescued": 0,
+          "n_lesions": 18,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/22580068/unet_resnet50_256_overlay.png",
+          "zoom": "data/22580068/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9354,
+          "n_segmented": 18,
+          "n_rescued": 0,
+          "n_lesions": 18,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/22580068/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22580068/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9274,
+          "n_segmented": 18,
+          "n_rescued": 0,
+          "n_lesions": 18,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/22580068/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22580068/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9352,
+          "n_segmented": 18,
+          "n_rescued": 0,
+          "n_lesions": 18,
+          "fp_patches": 1,
+          "fp_suppressed": 0,
+          "overlay": "data/22580068/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22580068/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50998177",
+      "raw": "data/50998177/raw.png",
+      "mean_dice": 0.9128,
+      "n_lesions": 4,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8473,
+          "n_segmented": 4,
+          "n_rescued": 0,
+          "n_lesions": 4,
+          "fp_patches": 6,
+          "fp_suppressed": 5,
+          "overlay": "data/50998177/context_256_dicebce_overlay.png",
+          "zoom": "data/50998177/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.936,
+          "n_segmented": 4,
+          "n_rescued": 0,
+          "n_lesions": 4,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/50998177/unet_resnet50_256_overlay.png",
+          "zoom": "data/50998177/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.924,
+          "n_segmented": 4,
+          "n_rescued": 0,
+          "n_lesions": 4,
+          "fp_patches": 1,
+          "fp_suppressed": 0,
+          "overlay": "data/50998177/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50998177/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9235,
+          "n_segmented": 4,
+          "n_rescued": 0,
+          "n_lesions": 4,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/50998177/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50998177/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9331,
+          "n_segmented": 4,
+          "n_rescued": 0,
+          "n_lesions": 4,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50998177/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50998177/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "53582818",
+      "raw": "data/53582818/raw.png",
+      "mean_dice": 0.9118,
+      "n_lesions": 15,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8943,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/53582818/context_256_dicebce_overlay.png",
+          "zoom": "data/53582818/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9193,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/53582818/unet_resnet50_256_overlay.png",
+          "zoom": "data/53582818/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9128,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 2,
+          "fp_suppressed": 1,
+          "overlay": "data/53582818/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/53582818/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9172,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 1,
+          "fp_suppressed": 0,
+          "overlay": "data/53582818/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/53582818/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9155,
+          "n_segmented": 15,
+          "n_rescued": 0,
+          "n_lesions": 15,
+          "fp_patches": 1,
+          "fp_suppressed": 0,
+          "overlay": "data/53582818/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/53582818/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "50997434",
+      "raw": "data/50997434/raw.png",
+      "mean_dice": 0.9071,
+      "n_lesions": 1,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8293,
+          "n_segmented": 1,
+          "n_rescued": 0,
+          "n_lesions": 1,
+          "fp_patches": 5,
+          "fp_suppressed": 4,
+          "overlay": "data/50997434/context_256_dicebce_overlay.png",
+          "zoom": "data/50997434/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9432,
+          "n_segmented": 1,
+          "n_rescued": 0,
+          "n_lesions": 1,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50997434/unet_resnet50_256_overlay.png",
+          "zoom": "data/50997434/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9148,
+          "n_segmented": 1,
+          "n_rescued": 0,
+          "n_lesions": 1,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/50997434/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/50997434/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9181,
+          "n_segmented": 1,
+          "n_rescued": 0,
+          "n_lesions": 1,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/50997434/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/50997434/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9299,
+          "n_segmented": 1,
+          "n_rescued": 0,
+          "n_lesions": 1,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/50997434/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/50997434/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "53582737",
+      "raw": "data/53582737/raw.png",
+      "mean_dice": 0.9032,
+      "n_lesions": 80,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8938,
+          "n_segmented": 77,
+          "n_rescued": 3,
+          "n_lesions": 80,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/53582737/context_256_dicebce_overlay.png",
+          "zoom": "data/53582737/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9126,
+          "n_segmented": 75,
+          "n_rescued": 5,
+          "n_lesions": 80,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/53582737/unet_resnet50_256_overlay.png",
+          "zoom": "data/53582737/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9184,
+          "n_segmented": 76,
+          "n_rescued": 3,
+          "n_lesions": 80,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/53582737/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/53582737/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.8995,
+          "n_segmented": 75,
+          "n_rescued": 4,
+          "n_lesions": 80,
+          "fp_patches": 0,
+          "fp_suppressed": 0,
+          "overlay": "data/53582737/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/53582737/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.8915,
+          "n_segmented": 76,
+          "n_rescued": 3,
+          "n_lesions": 80,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/53582737/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/53582737/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "51049655",
+      "raw": "data/51049655/raw.png",
+      "mean_dice": 0.9026,
+      "n_lesions": 21,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.8814,
+          "n_segmented": 18,
+          "n_rescued": 2,
+          "n_lesions": 21,
+          "fp_patches": 6,
+          "fp_suppressed": 5,
+          "overlay": "data/51049655/context_256_dicebce_overlay.png",
+          "zoom": "data/51049655/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9092,
+          "n_segmented": 18,
+          "n_rescued": 2,
+          "n_lesions": 21,
+          "fp_patches": 4,
+          "fp_suppressed": 3,
+          "overlay": "data/51049655/unet_resnet50_256_overlay.png",
+          "zoom": "data/51049655/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.9122,
+          "n_segmented": 20,
+          "n_rescued": 1,
+          "n_lesions": 21,
+          "fp_patches": 3,
+          "fp_suppressed": 2,
+          "overlay": "data/51049655/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/51049655/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.9045,
+          "n_segmented": 19,
+          "n_rescued": 1,
+          "n_lesions": 21,
+          "fp_patches": 4,
+          "fp_suppressed": 3,
+          "overlay": "data/51049655/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/51049655/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9055,
+          "n_segmented": 20,
+          "n_rescued": 0,
+          "n_lesions": 21,
+          "fp_patches": 1,
+          "fp_suppressed": 1,
+          "overlay": "data/51049655/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/51049655/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    },
+    {
+      "id": "22614097",
+      "raw": "data/22614097/raw.png",
+      "mean_dice": 0.9021,
+      "n_lesions": 3,
+      "models": {
+        "context_256_dicebce": {
+          "name": "DualEncoder U-Net (ID 1)",
+          "dice": 0.901,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22614097/context_256_dicebce_overlay.png",
+          "zoom": "data/22614097/context_256_dicebce_zoom.png"
+        },
+        "unet_resnet50_256": {
+          "name": "U-Net ResNet-50 / ImageNet (ID 2)",
+          "dice": 0.9137,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22614097/unet_resnet50_256_overlay.png",
+          "zoom": "data/22614097/unet_resnet50_256_zoom.png"
+        },
+        "effunet_imagenet_b5_256": {
+          "name": "EfficientNet-B5 U-Net / ImageNet (ID 3)",
+          "dice": 0.8976,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 4,
+          "fp_suppressed": 4,
+          "overlay": "data/22614097/effunet_imagenet_b5_256_overlay.png",
+          "zoom": "data/22614097/effunet_imagenet_b5_256_zoom.png"
+        },
+        "mammoclip_attention_b5": {
+          "name": "Mammo-CLIP Attention U-Net (ID 6)",
+          "dice": 0.8922,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 4,
+          "fp_suppressed": 4,
+          "overlay": "data/22614097/mammoclip_attention_b5_overlay.png",
+          "zoom": "data/22614097/mammoclip_attention_b5_zoom.png"
+        },
+        "mammoclip_segformer_b5": {
+          "name": "Mammo-CLIP SegFormer-MLP (ID 7)",
+          "dice": 0.9061,
+          "n_segmented": 3,
+          "n_rescued": 0,
+          "n_lesions": 3,
+          "fp_patches": 2,
+          "fp_suppressed": 2,
+          "overlay": "data/22614097/mammoclip_segformer_b5_overlay.png",
+          "zoom": "data/22614097/mammoclip_segformer_b5_zoom.png"
+        }
+      }
+    }
+  ]
+}

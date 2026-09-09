@@ -1,0 +1,171 @@
+<!doctype html><html lang="ro"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HRIA — demonstrator microcalcificări mamare</title>
+<style>
+:root{--bg:#eef1f6;--card:#fff;--ink:#16202e;--mut:#5c6879;--line:#e2e7ef;--accent:#1d4ed8;--accent2:#0ea5a5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+  font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:20px}
+.banner{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 26px;display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.banner .logos{display:flex;gap:18px;align-items:center}.banner .logos img{height:52px}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.08em;font-size:12px;text-transform:uppercase}
+.banner h1{margin:4px 0 6px;font-size:24px;line-height:1.2}.banner p{margin:0;color:var(--mut);font-size:13px;max-width:70ch}
+.disc{background:#fff7ed;border:1px solid #f3d8ac;color:#7c4a12;border-radius:10px;padding:10px 14px;margin:16px 0;font-size:13px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin:12px 0 4px;font-size:13px;color:var(--mut)}
+.legend span{display:inline-flex;align-items:center;gap:6px}.sw{width:14px;height:14px;border-radius:3px;display:inline-block;border:1px solid #0002}
+.grid{display:grid;grid-template-columns:320px 1fr;gap:16px;margin-top:16px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.card h2{margin:0 0 12px;font-size:15px}.card h2 .pill{float:right;color:var(--mut);font-weight:500;font-size:12px}
+label{display:block;font-size:13px;color:var(--mut);margin:10px 0 4px}
+select,button{font:inherit}select{width:100%;padding:8px;border:1px solid var(--line);border-radius:9px;background:#fff}
+.mbtns{display:flex;flex-direction:column;gap:6px;margin-top:6px}
+.mbtn{text-align:left;padding:8px 10px;border:1px solid var(--line);border-radius:9px;background:#fff;cursor:pointer;font-size:13px}
+.mbtn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:8px}
+.thumbs img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;border:2px solid transparent;cursor:pointer}
+.thumbs img.active{border-color:var(--accent)}
+.viz{display:grid;grid-template-columns:2fr 1fr;gap:14px}@media(max-width:640px){.viz{grid-template-columns:1fr}}
+.viz img{width:100%;height:auto;border-radius:10px;display:block;background:#000}
+.badge{display:inline-block;background:#eef2ff;color:var(--accent);border-radius:20px;padding:3px 10px;font-size:12px;font-weight:600}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.stat{flex:1;min-width:96px;background:#f7f9fc;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.stat b{display:block;font-size:19px}.stat small{color:var(--mut)}
+.mcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:14px}
+.mcard{border:1px solid var(--line);border-radius:12px;padding:12px}
+.mcard .d{float:right;font-size:20px;font-weight:700;color:var(--accent)}
+.mcard p{color:var(--mut);font-size:12.5px;margin:6px 0 8px}
+.mini{display:flex;gap:10px;font-size:12px;color:var(--mut)}.mini b{color:var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:10px}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:center}th{color:var(--mut);font-weight:600}
+td.l,th.l{text-align:left}tbody tr:hover{background:#f7f9fc}.cap{color:var(--mut);font-size:12.5px;margin-top:8px}
+.foot{color:var(--mut);font-size:12px;text-align:center;margin:26px 0 10px}
+</style></head><body><div class="wrap">
+
+<div class="banner">
+  <div class="logos">
+    <img src="https://hria-medical-upb.github.io/upb-hria-medical-ai-demonstrator/ue_80.png" alt="Uniunea Europeană">
+    <img src="https://hria-medical-upb.github.io/upb-hria-medical-ai-demonstrator/logo_80.png" alt="HRIA">
+    <img src="https://hria-medical-upb.github.io/upb-hria-medical-ai-demonstrator/gov_80.png" alt="Guvernul României">
+  </div>
+  <div>
+    <div class="eyebrow">Hub Român de Inteligență Artificială — HRIA</div>
+    <h1>Demonstrator interactiv — analiza microcalcificărilor mamare</h1>
+    <p>Pipeline multi-etapă pe setul INbreast: segmentare semantică, filtrare a fals-pozitivelor prin clasificare
+    și recuperarea leziunilor ratate prin detecție. Programul Creștere Inteligentă, Digitalizare și Instrumente
+    Financiare 2021–2027, cofinanțat prin Fondul European de Dezvoltare Regională. Cod SMIS: 351416.</p>
+  </div>
+</div>
+
+<div class="legend">
+  <span><i class="sw" style="background:red"></i>segmentare</span>
+  <span><i class="sw" style="background:yellow"></i>adevăr de referință (GT)</span>
+  <span><i class="sw" style="background:turquoise"></i>detectat + segmentat</span>
+  <span><i class="sw" style="background:#00e000"></i>detectat, NEsegmentat (recuperat)</span>
+  <span><i class="sw" style="background:magenta"></i>patch FP suprimat</span>
+</div>
+
+<div class="grid">
+  <div class="card">
+    <h2>Control vizualizare <span class="pill" id="counts"></span></h2>
+    <label>Caz</label><select id="casesel"></select>
+    <label>Model</label><div class="mbtns" id="mbtns"></div>
+    <label>Cazuri disponibile</label><div class="thumbs" id="thumbs"></div>
+  </div>
+
+  <div class="card">
+    <h2>Vizualizare predicție <span class="pill" id="bestbadge"></span></h2>
+    <div class="viz">
+      <div><img id="overlay" alt="suprapunere predicție"><div class="cap" id="ovcap"></div></div>
+      <div><img id="zoom" alt="detaliu leziune"><div class="cap">Detaliu pe o leziune recuperată / cea mai mare leziune.</div></div>
+    </div>
+    <div class="stats" id="stats"></div>
+
+    <h2 style="margin-top:20px">Comparație între modele (cazul curent)</h2>
+    <div class="mcards" id="mcards"></div>
+  </div>
+</div>
+
+<div class="card" style="margin-top:16px">
+  <h2>Rezultate agregate pe cele 30 de cazuri demo</h2>
+  <table id="aggtable"><thead><tr>
+    <th class="l">Model</th><th>Dice mediu</th><th>Leziuni recuperate (total)</th><th>Patch-uri FP suprimate (total)</th>
+  </tr></thead><tbody></tbody></table>
+</div>
+
+<div class="card" style="margin-top:16px">
+  <h2>Metrici de performanță de-a lungul etapelor pipeline-ului: (a) Scoruri Dice de segmentare pentru modelele de bază și după gatekeeper-ul de clasificare; (b) Performanța de detecție de sine stătătoare (mAP@50) pentru modelele rescue.</h2>
+  <table>
+    <thead>
+      <tr><th class="l" rowspan="2">ID</th><th class="l" rowspan="2">Model</th>
+          <th colspan="2">(a) Segmentare (Dice)</th><th colspan="2">(b) Detecție (mAP@50)</th></tr>
+      <tr><th>Base</th><th>+ Clasificator</th><th>RetinaNet</th><th>YOLOv11</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td class="l">DualEncoderUNet (al nostru)</td><td>0.5590 ± 0.0210</td><td>0.7657</td><td>0.7641</td><td>0.4426</td></tr>
+      <tr><td>2</td><td class="l">U-Net (ResNet-50, ImageNet)</td><td>0.6521 ± 0.0254</td><td>0.7824</td><td>0.7794</td><td>0.3676</td></tr>
+      <tr><td>3</td><td class="l">EfficientNet-B5 U-Net (ImageNet)</td><td>0.6728 ± 0.0243</td><td>0.7967</td><td>0.7834</td><td>0.4066</td></tr>
+      <tr><td>4</td><td class="l">Mammo-CLIP U-Net (EfficientNet-B5)</td><td><b>0.6950 ± 0.0253</b></td><td>0.8165</td><td>0.7770</td><td>0.4046</td></tr>
+      <tr><td>5</td><td class="l">Mammo-CLIP → CBIS → INbreast</td><td>0.6832 ± 0.0297</td><td>0.8143</td><td>0.7227</td><td>0.3254</td></tr>
+      <tr><td>6</td><td class="l">Mammo-CLIP Attention-U-Net</td><td>0.6880 ± 0.0259</td><td><b>0.8303</b></td><td>0.8018</td><td>0.4478</td></tr>
+      <tr><td>7</td><td class="l">Mammo-CLIP SegFormer-MLP</td><td>0.6738 ± 0.0329</td><td>0.7920</td><td><b>0.8195</b></td><td><b>0.5035</b></td></tr>
+      <tr><td>8</td><td class="l">MedSAM cascade (RetinaNet boxes)</td><td>0.6406 ± 0.0244</td><td>0.7954</td><td>0.4154</td><td>0.1987</td></tr>
+      <tr><td></td><td class="l">MC-GenRef [25] (SoTA – comparație)</td><td colspan="2">0.80</td><td colspan="2">–</td></tr>
+    </tbody>
+  </table>
+  <div class="cap">Demonstratorul interactiv de mai sus acoperă modelele 1, 2, 3, 6 și 7; tabelul redă rezultatele complete din articol.</div>
+</div>
+
+<div class="foot" id="foot"></div>
+</div>
+
+<script>
+const DESC={
+ context_256_dicebce:"U-Net cu dublu encoder și atenție, antrenat de la zero (intrare de 9 canale: patch central + context 3×3).",
+ unet_resnet50_256:"U-Net cu encoder ResNet-50 inițializat pe ImageNet.",
+ effunet_imagenet_b5_256:"U-Net cu encoder EfficientNet-B5 inițializat pe ImageNet.",
+ mammoclip_attention_b5:"Attention U-Net cu encoder EfficientNet-B5 inițializat din Mammo-CLIP.",
+ mammoclip_segformer_b5:"Decodor de tip SegFormer-MLP cu encoder EfficientNet-B5 inițializat din Mammo-CLIP."
+};
+const pct=v=>(v*100).toFixed(1)+'%';
+let D,cur=0,mkey;
+const $=s=>document.querySelector(s);
+fetch('data/demo.json').then(r=>r.json()).then(d=>{D=d;init()}).catch(e=>{
+  $('#disc').textContent='Nu am putut încărca data/manifest.json — servește pagina printr-un server (nu file://).';});
+
+function init(){
+  mkey=D.models[0].key;
+  $('#counts').textContent=`${D.images.length} cazuri · ${D.models.length} modele`;
+  $('#casesel').innerHTML=D.images.map((im,i)=>`<option value="${i}">Caz ${i+1} — ${im.id} (Dice mediu ${pct(im.mean_dice)})</option>`).join('');
+  $('#casesel').onchange=e=>{cur=+e.target.value;render()};
+  $('#mbtns').innerHTML=D.models.map(m=>`<button class="mbtn" data-k="${m.key}">${m.name}</button>`).join('');
+  document.querySelectorAll('.mbtn').forEach(b=>b.onclick=()=>{mkey=b.dataset.k;render()});
+  $('#thumbs').innerHTML=D.images.map((im,i)=>`<img src="${im.raw}" title="Caz ${i+1} — ${im.id}" data-i="${i}">`).join('');
+  document.querySelectorAll('.thumbs img').forEach(t=>t.onclick=()=>{cur=+t.dataset.i;$('#casesel').value=cur;render()});
+  buildAgg();
+  render();
+}
+function bestKey(im){let bk=D.models[0].key,bd=-1;for(const m of D.models){const d=im.models[m.key].dice;if(d>bd){bd=d;bk=m.key}}return bk;}
+function render(){
+  const im=D.images[cur],m=im.models[mkey];
+  $('#overlay').src=m.overlay;$('#zoom').src=m.zoom||m.overlay;
+  $('#ovcap').textContent=`${m.name} — Dice ${pct(m.dice)} · caz ${im.id}`;
+  $('#bestbadge').textContent='cel mai bun Dice: '+im.models[bestKey(im)].name;
+  document.querySelectorAll('.mbtn').forEach(b=>b.classList.toggle('active',b.dataset.k===mkey));
+  document.querySelectorAll('.thumbs img').forEach((t,i)=>t.classList.toggle('active',i===cur));
+  $('#stats').innerHTML=[
+    ['Dice',pct(m.dice)],['Leziuni',m.n_lesions],['Segmentate',`${m.n_segmented}/${m.n_lesions}`],
+    ['Recuperate (detecție)',m.n_rescued],['FP suprimate',`${m.fp_suppressed}/${m.fp_patches}`]
+  ].map(([k,v])=>`<div class="stat"><b>${v}</b><small>${k}</small></div>`).join('');
+  $('#mcards').innerHTML=D.models.map(mm=>{const x=im.models[mm.key];return `<div class="mcard">
+    <span class="d">${pct(x.dice)}</span><b>${mm.name}</b><p>${DESC[mm.key]||''}</p>
+    <div class="mini"><span>Segm. <b>${x.n_segmented}/${x.n_lesions}</b></span>
+    <span>Recuperate <b>${x.n_rescued}</b></span><span>FP supr. <b>${x.fp_suppressed}/${x.fp_patches}</b></span></div></div>`}).join('');
+}
+function buildAgg(){
+  const tb=$('#aggtable tbody');
+  tb.innerHTML=D.models.map(mm=>{
+    let ds=0,res=0,fp=0;for(const im of D.images){const x=im.models[mm.key];ds+=x.dice;res+=x.n_rescued;fp+=x.fp_suppressed;}
+    return `<tr><td class="l">${mm.name}</td><td>${pct(ds/D.images.length)}</td><td>${res}</td><td>${fp}</td></tr>`;}).join('');
+}
+</script></body></html>
